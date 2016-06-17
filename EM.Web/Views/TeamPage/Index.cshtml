@@ -1,0 +1,12 @@
+﻿@model EM.Web.ViewModels.TeamPageViewModel
+
+<h1>@Html.PropertyFor(x => x.CurrentPage.TeamName)</h1>
+
+<p>@Html.PropertyFor(x => x.CurrentPage.Information)</p>
+
+@Html.PropertyFor(x => x.CurrentPage.MainGame)
+
+@foreach (var player in Model.Players)
+{
+    @Html.Partial("_Player", player)
+}

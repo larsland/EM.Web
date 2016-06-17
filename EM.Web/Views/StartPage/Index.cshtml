@@ -1,0 +1,11 @@
+﻿
+@model EM.Web.ViewModels.IPageViewModel<EM.Web.Models.Pages.StartPage>
+
+<h1 style="font-size: 60px">@Html.PropertyFor(x => x.CurrentPage.MainTitle)</h1>
+
+<div class="lead">@Html.PropertyFor(x => x.CurrentPage.Lead)</div>
+
+<p>@Html.PropertyFor(x => x.CurrentPage.Content)</p>
+
+<div>@Html.PropertyFor(x => x.CurrentPage.ContentArea)</div>
+

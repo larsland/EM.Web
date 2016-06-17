@@ -1,0 +1,10 @@
+﻿@model EM.Web.Models.Blocks.GameBlock
+
+
+<p>
+    <div class="btn btn-success">@Html.PropertyFor(x => x.HomeTeam)</div>
+    is playing
+    <div class="btn btn-danger">@Html.PropertyFor(x => x.AwayTeam)</div>
+    at @Html.PropertyFor(x => x.StartDateTime)
+</p>
+
